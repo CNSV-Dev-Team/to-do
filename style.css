@@ -1,0 +1,83 @@
+/* Elimina margini default browsere */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    /* Setam fontul default pe toata pagina*/
+    font-family: sans-serif;
+}
+
+/* Containerul principal (fundalul)*/
+#app-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffe;
+    padding: 20px;
+}
+
+/* Containerul pentru input si add*/
+#controls-container {
+    height: 40px;
+}
+
+input {
+    font-size: 24px;
+    height: 100%;
+}
+
+#add-btn {
+    font-size: 24px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    background-color: #66c2ff;
+    color: #fff;
+}
+
+/*Lista de to do*/
+#todo-list {
+    margin-top: 20px;
+    width: 500px;
+    background-color: #ffc2fc;
+    padding: 8px;
+    border-radius: 12px;
+
+    /* 
+Facem ca elementele sa apara
+unul dupa altul, pe verticala
+si sa aiba un spatiu de 10px
+intre ele
+*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item {
+    padding: 0.5rem;
+    background-color: #dcffc2;
+    border-radius: 6px;
+
+    /*
+Pune continutul si butonul de remove
+pe o linie, si distantate la distanta
+maxima (unul la stanga unul la dreapta)
+*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-content {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.remove-button {
+    padding: 12px;
+    border: none;
+    background-color: #ff91bd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
